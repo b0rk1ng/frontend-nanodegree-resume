@@ -12,14 +12,14 @@ let bio = {
     skills: ["ServiceNow", "Python", "Linux", "JavaScript", "HTML/CSS", "SQL", "AWS", "Git", "Ansible", "Terraform"]
 }
 
-let education = Object();
-
-education['school'] = "University of Liverpool";
-education['start'] = 2006;
-education['degree'] = "Mathematical Physics";
-education['dates'] = "2006-2010";
-education['location'] = "Liverpool";
-education['major'] = "String Theory";
+let education = {
+    'school': "University of Liverpool",
+    'start': 2006,
+    'degree': "Mathematical Physics",
+    'dates': "2006-2010",
+    'location': "Liverpool",
+    'major': "String Theory"
+}
 
 let work = Object();
 
