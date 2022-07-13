@@ -21,6 +21,14 @@ education['dates'] = "2006-2010";
 education['location'] = "Liverpool";
 education['major'] = "String Theory";
 
+let work = Object();
+
+work.employer = "RCDTS (for HMRC)";
+work.start = "January 2022";
+work.title = bio.role;
+work.location = "Telford"
+work.description = "Implementing enterprise tooling solutons, such as Configuration of integrations between ServiceNow and other applications, for example Nexthink digital experience monitoring and set up of ServiceNow data ingestion via AWS S3. Supporting enterprise tooling solutions including out of hours support.";
+
 let formattedName = HTMLheaderName.replace('%data%', bio.name);
 let formattedRole = HTMLheaderRole.replace('%data%', bio.role);
 let formattedMobile = HTMLmobile.replace('%data%', bio.mobile);
@@ -30,6 +38,7 @@ let formattedWelcome = HTMLwelcomeMsg.replace('%data%', bio.welcome);
 let formattedSkills = bio.skills.map((skill) => HTMLskills.replace('%data%', skill));
 formattedSkills = HTMLskillsStart.replace('%data%', formattedSkills);
 let formattedEducationSchool = HTMLschoolName.replace('%data%', education.school);
+let formattedWorkJob = HTMLworkTitle.replace('%data%', work['title']);
 
 $('#header').append(formattedName);
 $('#header').append(formattedRole);
@@ -39,3 +48,4 @@ $('#header').append(formattedMobile);
 $('#header').prepend(formattedBioPic);
 $('#main').append(formattedSkills);
 $('#main').append(formattedEducationSchool);
+$('#main').append(formattedWorkJob);
