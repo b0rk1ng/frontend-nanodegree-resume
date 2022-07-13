@@ -21,13 +21,13 @@ let education = {
     'major': "String Theory"
 }
 
-let work = Object();
-
-work.employer = "RCDTS (for HMRC)";
-work.start = "January 2022";
-work.title = bio.role;
-work.location = "Telford"
-work.description = "Implementing enterprise tooling solutons, such as Configuration of integrations between ServiceNow and other applications, for example Nexthink digital experience monitoring and set up of ServiceNow data ingestion via AWS S3. Supporting enterprise tooling solutions including out of hours support.";
+let work = {
+    'employer': "RCDTS (for HMRC)",
+    'start': "January 2022",
+    'title': bio.role,
+    'location': "Telford",
+    'description': "Implementing enterprise tooling solutons, such as Configuration of integrations between ServiceNow and other applications, for example Nexthink digital experience monitoring and set up of ServiceNow data ingestion via AWS S3. Supporting enterprise tooling solutions including out of hours support."
+}
 
 let formattedName = HTMLheaderName.replace('%data%', bio.name);
 let formattedRole = HTMLheaderRole.replace('%data%', bio.role);
