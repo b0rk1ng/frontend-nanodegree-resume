@@ -12,6 +12,15 @@ let bio = {
     skills: ["ServiceNow", "Python", "Linux", "JavaScript", "HTML/CSS", "SQL", "AWS", "Git", "Ansible", "Terraform"]
 }
 
+let education = Object();
+
+education['school'] = "University of Liverpool";
+education['start'] = 2006;
+education['degree'] = "Mathematical Physics";
+education['dates'] = "2006-2010";
+education['location'] = "Liverpool";
+education['major'] = "String Theory";
+
 let formattedName = HTMLheaderName.replace('%data%', bio.name);
 let formattedRole = HTMLheaderRole.replace('%data%', bio.role);
 let formattedMobile = HTMLmobile.replace('%data%', bio.mobile);
@@ -20,6 +29,7 @@ let formattedBioPic = HTMLbioPic.replace('%data%', bio.pic);
 let formattedWelcome = HTMLwelcomeMsg.replace('%data%', bio.welcome);
 let formattedSkills = bio.skills.map((skill) => HTMLskills.replace('%data%', skill));
 formattedSkills = HTMLskillsStart.replace('%data%', formattedSkills);
+let formattedEducationSchool = HTMLschoolName.replace('%data%', education.school);
 
 $('#header').append(formattedName);
 $('#header').append(formattedRole);
@@ -28,3 +38,4 @@ $('#header').append(formattedEmail);
 $('#header').append(formattedMobile);
 $('#header').prepend(formattedBioPic);
 $('#main').append(formattedSkills);
+$('#main').append(formattedEducationSchool);
