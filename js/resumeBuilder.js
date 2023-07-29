@@ -29,19 +29,19 @@ const work = {
     'description': "Implementing enterprise tooling solutons, such as Configuration of integrations between ServiceNow and other applications, for example Nexthink digital experience monitoring and set up of ServiceNow data ingestion via AWS S3. Supporting enterprise tooling solutions including out of hours support."
 };
 
-const formattedName = HTMLheaderName.replace('%data%', bio.name);
-const formattedRole = HTMLheaderRole.replace('%data%', bio.role);
-const formattedMobile = HTMLmobile.replace('%data%', bio.mobile);
-const formattedEmail = HTMLemail.replace('%data%', bio.email);
-const formattedBioPic = HTMLbioPic.replace('%data%', bio.pic);
-const formattedWelcome = HTMLwelcomeMsg.replace('%data%', bio.welcome);
-let formattedSkills = bio.skills.map((skill) => HTMLskills.replace('%data%', skill));
-formattedSkills = HTMLskillsStart.replace('%data%', formattedSkills);
+// const formattedName = HTMLheaderName.replace('%data%', bio.name);
+// const formattedRole = HTMLheaderRole.replace('%data%', bio.role);
+// const formattedMobile = HTMLmobile.replace('%data%', bio.mobile);
+// const formattedEmail = HTMLemail.replace('%data%', bio.email);
+// const formattedBioPic = HTMLbioPic.replace('%data%', bio.pic);
+// const formattedWelcome = HTMLwelcomeMsg.replace('%data%', bio.welcome);
+// let formattedSkills = bio.skills.map((skill) => HTMLskills.replace('%data%', skill));
+// formattedSkills = HTMLskillsStart.replace('%data%', formattedSkills);
 
-$('#header').append(formattedName);
-$('#header').append(formattedRole);
-$('#header').append(formattedWelcome);
-$('#header').append(formattedEmail);
-$('#header').append(formattedMobile);
-$('#header').prepend(formattedBioPic);
-$('#header').append(formattedSkills);
+// $('#header').append(formattedName);
+// $('#header').append(formattedRole);
+// $('#header').append(formattedWelcome);
+// $('#header').append(formattedEmail);
+// $('#header').append(formattedMobile);
+// $('#header').prepend(formattedBioPic);
+// $('#header').append(formattedSkills);
