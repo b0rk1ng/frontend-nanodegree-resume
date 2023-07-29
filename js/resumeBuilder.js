@@ -10,7 +10,7 @@ const bio = {
     pic: "images/moi.jfif",
     welcome: "A passionate, highly motivated and dedicated professional with strong technical, organisational and optimisation skills. Experienced with ServiceNow platform and with troubleshooting IT issues and managing a variety of data for a wide range of purposes.",
     skills: ["ServiceNow", "PowerShell", "Python", "Linux", "JavaScript", "HTML/CSS", "SQL", "AWS", "Git", "Ansible", "Terraform"]
-}
+};
 
 const education = {
     'school': "University of Liverpool",
@@ -19,7 +19,7 @@ const education = {
     'dates': "2006-2010",
     'location': "Liverpool",
     'major': "String Theory"
-}
+};
 
 const work = {
     'employer': "HMRC",
@@ -27,7 +27,7 @@ const work = {
     'title': bio.role,
     'location': "Telford",
     'description': "Implementing enterprise tooling solutons, such as Configuration of integrations between ServiceNow and other applications, for example Nexthink digital experience monitoring and set up of ServiceNow data ingestion via AWS S3. Supporting enterprise tooling solutions including out of hours support."
-}
+};
 
 const formattedName = HTMLheaderName.replace('%data%', bio.name);
 const formattedRole = HTMLheaderRole.replace('%data%', bio.role);
