@@ -38,9 +38,6 @@ const formattedWelcome = HTMLwelcomeMsg.replace('%data%', bio.welcome);
 let formattedSkills = bio.skills.map((skill) => HTMLskills.replace('%data%', skill));
 formattedSkills = HTMLskillsStart.replace('%data%', formattedSkills);
 
-const formattedEducationSchool = HTMLschoolName.replace('%data%', education.school);
-const formattedWorkJob = HTMLworkTitle.replace('%data%', work['title']);
-
 $('#header').append(formattedName);
 $('#header').append(formattedRole);
 $('#header').append(formattedWelcome);
@@ -48,5 +45,3 @@ $('#header').append(formattedEmail);
 $('#header').append(formattedMobile);
 $('#header').prepend(formattedBioPic);
 $('#header').append(formattedSkills);
-$('#main').append(formattedEducationSchool);
-$('#main').append(formattedWorkJob);
